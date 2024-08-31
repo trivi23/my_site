@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This post Title
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<section id="summary">
+    <h2>Post Title</h2>
+    <article>
+        <img src={% static "blog/images/mountains.jpg" %} alt="Post Title">
+        <address>By Trivi</address>
+        <div>Last Updated on <time>Sept 1</time>
+        </div>
+    </article>
+</section>
+
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse perspiciatis quas distinctio atque dolor
+        iusto itaque officia voluptas omnis aliquid quidem, soluta numquam quod sequi. Facilis ad laboriosam magni!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora error eligendi est adipisci, distinctio velit
+        esse architecto dicta amet dolorum dolore quas laborum corporis perspiciatis cupiditate doloribus incidunt ullam
+        eum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur aliquam, praesentium est
+        blanditiis laborum ullam vitae magni eveniet quidem culpa nesciunt molestias a provident nihil corrupti eum
+        facilis optio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse perspiciatis quas distinctio atque dolor
+        iusto itaque officia voluptas omnis aliquid quidem, soluta numquam quod sequi. Facilis ad laboriosam magni!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora error eligendi est adipisci, distinctio velit
+        esse architecto dicta amet dolorum dolore quas laborum corporis perspiciatis cupiditate doloribus incidunt ullam
+        eum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur aliquam, praesentium est
+        blanditiis laborum ullam vitae magni eveniet quidem culpa nesciunt molestias a provident nihil corrupti eum
+        facilis optio.</p>
+</main>
+{% endblock %}
